@@ -35,7 +35,7 @@ for i in range(2024,0,-3):
 # 6 -  establece tres variables: numInicial, numFinal y multiplo. Comenzando en numInicial y pasando por numFinal, imprime los números enteros que sean múltiplos de multiplo. Por ejemplo: si numInicial = 3, numFinal = 10, y multiplo = 2, el bucle debería de imprimir 4, 6, 8, 10 (en líneas sucesivas).
 print("#############################6######################################")
 numInicial = 2
-numFinal = 50
+numFinal = 48
 multiplo = 4
 
 for i in range(numInicial, numFinal+1):
