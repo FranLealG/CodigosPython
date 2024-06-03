@@ -56,7 +56,7 @@ iterarDiccionario2("pais",cantantes)
 ########################################### EJERCICIO 4 ###########################################
 def imprimirInformacion(diccionario):
     for dato in diccionario:
-        print(len(diccionario[dato]),dato)
+        print(len(diccionario[dato]),dato.upper())
         for i in diccionario[dato]:
             print(i)
 
