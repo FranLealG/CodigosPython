@@ -1,15 +1,19 @@
+from Animal import Animal
+
 class Persona:
     
     escuela = "Coding Dojo"
     lista_persona = []
     # init se encarga de inicializar  el objeto/ metodo constructor
-    def __init__(self,name, last_name, e_mail, age):
+    def __init__(self,name, last_name, e_mail, age, nombre_mascota, sonido):
         # codigo | luego de inicializar se le agregan los datos de la clase, elementos
         self.nombre = name
         self.apellido = last_name
         self.email = e_mail
         self.linas_codigo = 0 #lineas de codigo que se ha desarrollado
         self.edad = age
+        #self.mascota = animalito
+        self.mascota = Animal(nombre_mascota, sonido)
 
         Persona.lista_persona.append(self)
 

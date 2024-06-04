@@ -1,7 +1,16 @@
 from Persona import Persona
+from Animal import Animal
 
-elena = Persona("Elena", "De Troya", "elena@codingdojo.com", 18) #creando instancia de persona
-juana = Persona("Juana", "De Arco", "juana@codingdojo.com", 22)
+##########################################
+aurora = Animal("Aurora", "miau")
+jacinta = Animal("Jacinta", "miau")
+moncho = Animal("Moncho", "guau")
+
+aurora.hacer_sonido()
+##########################################
+
+elena = Persona("Elena", "De Troya", "elena@codingdojo.com", 18, "milli", "AWAWAW") #creando instancia de persona
+juana = Persona("Juana", "De Arco", "juana@codingdojo.com", 22, "lautaro", "GRRRR")
 
 print(elena.nombre)
 print(juana.nombre)
@@ -20,10 +29,13 @@ Persona.escuela = "Escuela de programación"
 print(elena.escuela)
 print(juana.escuela)
 
-pedro = Persona("Pedro", "Perez", "pedro@codingdojo.com", 32)
+pedro = Persona("Pedro", "Perez", "pedro@codingdojo.com", 32, "Candela", "zzz")
 
 print(len(Persona.lista_persona))
 
 Persona.imprimir_todos()
 
 pedro.licencia_conducir()
+
+#####################################
+pedro.mascota.hacer_sonido()
